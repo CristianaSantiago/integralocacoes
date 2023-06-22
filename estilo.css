@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+:root{
+    --laranja:#E55807;
+    --amarelo:#C07F00;
+    --azul:#537188;
+    --beje: #D8C4B6;
+    --font-family: 'Oswald', sans-serif;      
+}
+
+body{    
+    --font-family: 'Oswald', sans-serif;
+    color: black; 
+}
+
+input [type=checkbox] {
+    border: 2px solid var(--beje);
+    box-shadow: none;
+}
+
+input [type=checkbox]:checked,
+input[type="checkbox"]:focus {  
+    background-color: var(--amarelo);
+    border: 1px solid var(--beje);
+    box-shadow: none;
+    outline: none;
+}
+.navbar{
+    border-bottom: 5px solid #537188;
+}
+.nav-link:hover{
+    border-bottom: 2px solid #C07F00;    
+}
+
+.banner-1{
+    background-image: url(./imagem/banner-carro.jpg);
+    
+}
+.banners {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;       
+}
+
+.banners-titulo {
+    opacity: .7;
+    font-family: var(--font-family);
+}
+.nossoservicos {
+    font-family: var(--font-family);
+    color: black;
+}
+
+.btn {
+    background-color: var(--amarelo);
+}
+.botao-padrao {
+    background-color: var(--azul);
+    
+}
+.botao-padrao:hover {
+    background-color: var(--amarelo);
+}
+footer {
+    background-color: #537188;
+}
+[data-bs-theme="dark"] {
+    .nav-link, .card-title, .btn, .offcanvas, .accordion-button, .nossoservicos{
+        color: white;
+    }
+     
+}

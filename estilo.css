@@ -4,6 +4,7 @@
     --amarelo:#C07F00;
     --azul:#537188;
     --beje: #D8C4B6;
+    --verde:#2C3639;
     --font-family: 'Oswald', sans-serif;      
 }
 
@@ -48,15 +49,24 @@ input[type="checkbox"]:focus {
     opacity: .7;
     font-family: var(--font-family);
 }
-.nossoservicos {
+.card {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 3rem;
+}
+.titulos {
     font-family: var(--font-family);
     color: black;
+    font-size: 3rem;
+    padding: 1.2rem;
 }
 
 .btn {
-    background-color: var(--amarelo);
+    background-color:white;
 }
 .botao-padrao {
+    color: white;
     background-color: var(--azul);
     
 }
@@ -64,11 +74,58 @@ input[type="checkbox"]:focus {
     background-color: var(--amarelo);
 }
 footer {
-    background-color: #537188;
+    color: white;
+    background-color:var(--verde);
 }
 [data-bs-theme="dark"] {
-    .nav-link, .card-title, .btn, .offcanvas, .accordion-button, .nossoservicos{
+    .nav-link, .card-title, .btn, .offcanvas, .accordion-button, .nossoservicos,.titulo_carro, #sobrenos, .titulos, main{
         color: white;
+    }     
+}
+
+/* CARROS */
+.main_carro{
+    margin-top: 10rem;
+}
+
+.titulo_carro{
+    font-family: var(--font-family);
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+.subtitulo{
+    font-family: var(--font-family);
+    color: #537188;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.card-title-carros{
+    padding-top: 2rem;
+    text-decoration: underline;
+}
+.card-text-carros {
+    padding: 1rem;
+}
+
+/* @media min 414px */
+ 
+@media screen and (min-width: 1440px){
+    .cards{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        gap:30px;
+        
+    }    
+} 
+
+@media screen and (min-width: 375px){
+    .cards{
+        gap: 30px;
     }
-     
+    
 }

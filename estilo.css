@@ -10,7 +10,8 @@
 
 body{    
     --font-family: 'Oswald', sans-serif;
-    color: black; 
+    color: white;
+    background-color: var(--verde); 
 }
 
 input [type=checkbox] {
@@ -25,11 +26,38 @@ input[type="checkbox"]:focus {
     box-shadow: none;
     outline: none;
 }
-.navbar{
-    border-bottom: 5px solid #537188;
+.container-fluid{
+    background-color: black;    
+}
+.container{
+    background-color: var(--verde);
+    color: white;
+}
+.container_footer{
+    background-color: black;
+}
+
+/* navbar */
+
+.offcanvas-body{
+    background-color: black;
+    color: white;
+}
+.navbar-toggler{
+    background-color: white;
+    color: var(--laranja);
+  
+    
+}
+.nav-link{
+    color: white;
 }
 .nav-link:hover{
+    color: white;
     border-bottom: 2px solid #C07F00;    
+}
+h2,h4{
+    color: black;
 }
 
 .banner-1{
@@ -54,10 +82,11 @@ input[type="checkbox"]:focus {
     justify-self: center;
     align-items: center;
     padding: 3rem;
+
 }
 .titulos {
     font-family: var(--font-family);
-    color: black;
+    color: white;
     font-size: 3rem;
     padding: 1.2rem;
 }
@@ -75,7 +104,7 @@ input[type="checkbox"]:focus {
 }
 footer {
     color: white;
-    background-color:var(--verde);
+    background-color: black;
 }
 [data-bs-theme="dark"] {
     .nav-link, .card-title, .btn, .offcanvas, .accordion-button, .nossoservicos,.titulo_carro, #sobrenos, .titulos, main{

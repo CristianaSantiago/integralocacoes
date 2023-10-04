@@ -44,28 +44,28 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                <a class="nav-link" aria-current="page" href="#">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#serviços">Serviços</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="carros.html">Veículos</a>
-                            </li>
-                            <li class="nav-item">
+                             <li class="nav-item">
                                 <a class="nav-link" href="#sobrenos">Sobre</a>
                             </li> 
                             <li class="nav-item">
+                                <a class="nav-link" href="carros.html">Veículos</a>
+                            </li>                           
+                            <li class="nav-item">
                                 <a class="nav-link" href="#contato">Contato</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="#">
                                     <div class="form-check form-switch">
                                         <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
                                         <label class="form-check-label" for="modo-noturno">Modo noturno</label>
                                     </div>
                                 </a>
-                            </li>
+                            </li> -->
                     </div>
                 </div>
             </div>
@@ -76,10 +76,7 @@
         <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
             <div class="banners-titulo bg-body-secondary py-4">
                 <h2 class="fw-bold"> Seu CARRO pode render até R$2.000,00/mês</h2>
-                <h3>Perdendo dinheiro com seu carro parado? Invista com a Íntegra Locações.</h3>
-                <!-- <p>Venha trabalhar com a Íntegra Locações. Alugamos o seu carro para motorista de
-                    aplicativos nas plataformas mais lucrativas como a Uber e 99pop.</p> -->
-            </div>
+                <h4>Invista o seu carro com a Íntegra Locações, alugando para nossa empresa.</h4>                
         </section>
         <!-- nossos serviço -->
         <section class="py-5" id="serviços">
@@ -101,8 +98,7 @@
                         <h5 class="card-title text-center py-2 fw-bold">Locatário</h5>
                         <p class="card-text">Precisando de dinheiro? alugue nossos veículos para trabalhar nas
                             plataformas de aplicativos.</p>
-                        <br>
-                        <a href="#" class="btn botao-padrao w-100 fw-bold" data-bs-toggle="offcanvas"
+                            <a href="#" class="btn botao-padrao w-100 fw-bold" data-bs-toggle="offcanvas"
                             data-bs-target="#canvas-1" aria-controls="offcanvasRight">Mais Informações</a>
                     </div>
                 </div>
@@ -110,8 +106,8 @@
         </section>
         <!-- mais informações -->
         <section class="m-sm-5">
-            <div class="d-flex mb-5">
-                <div class="card container border-3 rounded" style="width: 70rem; ">
+            <div class="cards p-3">
+                <div class="card container border border-3 rounded">
                     <h3>Realizamos as seguintes atividades:</h3>
                     <br>
                     <ul>
@@ -122,36 +118,10 @@
                         <li> Acompanhamento de manutenção;</li>
                         <li> Rastreamento do veículo;</li>
                         <li> Assistência juridica para confecção de contrato e cobrança de aluguel.</li>
-
-                    </ul>
-                   
+                    </ul>                   
                 </div>
             </div>
             <div class="cards p-3 ">
-                <!-- <div class="card container border border-3 rounded">
-                    <h4>Documentos</h4>
-                    <p>
-                        <li><b>Identificação da Multa:</b> A primeira etapa é identificar a multa, incluindo os detalhes
-                            da infração, como local, data e valor.
-                        </li>
-                        <br>
-                        <li><b> Notificação ao Locatário:</b> O locatário é notificado sobre a multa, geralmente por
-                            meio de um
-                            contato direto ou por email. Eles são informados sobre a infração cometida e o valor da
-                            multa.
-                        </li>
-                        <br>
-                        <li><b>Transferência de Pontuações e Valores:</b> Dependendo das políticas da empresa e da
-                            legislação
-                            local, a empresa pode transferir os pontos de penalização por infração de trânsito para o
-                            condutor responsável, se isso for aplicável.
-                        </li>
-                        <br>
-                        <li>Além disso, o valor da multa pode ser cobrado do locatário de
-                            acordo com os termos do contrato de locação.
-                        </li>
-                    </p>
-                </div> -->
                 <div class="card container border border-3 rounded">
                     <h3>Parcerias</h3>
                     <br>
@@ -173,7 +143,7 @@
             </div>
         </section>
         <!-- sobre nos -->
-        <section class="container border border-3 rounded mb-4" id="sobrenos">
+        <section class="container border border-3 rounded" id="sobrenos">
             <h2 class="titulos text-center">Sobre nós</h2>
             <div class=" p-3">
                 <p> A Integra Locações é uma empresa que atua como intermediária na locação de veículos,
@@ -204,48 +174,11 @@
                 <p>Junte-se a nós e faça parte dessa nova forma de trabalhar. Confie em nós como seu parceiro no
                     caminho para o sucesso.</p>
             </div>
-        </section>
-        <!-- entre em contato -->
-        <!-- <section class="py-4 container">
-            <div class="row">
-                <div class="col-10 col-xl-8 mx-auto">
-                    <div class="border border-3 rounded p-3">
-                        <h3 class=" titulos fw-bold p-3 text-center ">Entre em contato!</h3>
-                        <form id="contato" action="https://formsubmit.co/Locacoesintegra@gmail.com" method="POST">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="nome" id="floatingNome" placeholder="Nome"
-                                    required>
-                                <label for="floatingNome">Nome</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="email" name="email" class="form-control" id="floatingEmail"
-                                    placeholder="name@example.com" required>
-                                <label for="floatingEmail">Email</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="number" name="telefone" class="form-control" id="floatTelefone"
-                                    placeholder="Telefone" required>
-                                <label for="floatTelefone">Telefone</label>
-                            </div>
-                            <select class="form-select mb-3" aria-label="Default select example">
-                                <option selected>Preferência de contato:</option>
-                                <option value="1">Email</option>
-                                <option value="2">Whatsapp</option>
-                            </select>
-                            <button type="submit"
-                                class="btn botao-padrao border border-2 w-100 p-3 fw-bold">Enviar</button>
-                            <input type="hidden" name="_subject" value="Novo Contato!">
-                            <input type="text" name="_honey" style="display :none">
-                            <input type="hidden" name="_captcha" value="false">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+        </section>            
     </main>
     <!-- roda pé -->
-    <footer class="text-center">
-        <section class="container p-4 pb-0">
+    <footer class="text-center mt-4" id="contato">
+        <section class="container_footer p-4 pb-0">
             <a href="https://api.whatsapp.com/send?phone=5561983371946" target="_blank" rel="noopener noreferrer"
                 class="btn"> <i class="bi bi-whatsapp"></i></a>
             <a href="https://www.instagram.com/integra_locacoes/" target="_blank" class="btn"> <i
@@ -263,7 +196,7 @@
     <!-- canvas 1 -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel">Integra locações</h5>
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Serviços</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -311,7 +244,7 @@
     <!-- whatsapp -->
     <div class="whats">
         <a href="https://wa.me/5561983371946?text=Olá, tenho interesse!" target="_blank" rel="noopener noreferrer">
-            <img src="./imagem/whats.jpg" width="60" alt="whatsapp" title="fale conosco pelo whatsapp">
+            <img src="./imagem/WhatsApp_Logo_PNG_Bola_Icone_Transparente_Sem_Fundo.png" width="60" alt="whatsapp" title="fale conosco pelo whatsapp">
         </a>
     </div>
     <!-- boobstrap -->
